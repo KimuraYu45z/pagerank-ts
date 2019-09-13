@@ -22,7 +22,7 @@ export module Pagerank {
 
   export function transitionScore(
     stochasticMatrix: Matrix,
-    currentScore: Vector
+    currentScoreVector: Vector
   ): Vector {
     const score = new Vector();
 
@@ -31,8 +31,9 @@ export module Pagerank {
         if (score[dst] === undefined) {
           score[dst] = 0;
         }
+        const currentScore = currentScoreVector[src] || 0;
 
-        score[dst] += currentScore[src] * stochasticMatrix[src][dst];
+        score[dst] += currentScore * stochasticMatrix[src][dst];
       }
     }
 
