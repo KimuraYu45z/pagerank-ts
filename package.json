@@ -1,0 +1,23 @@
+{
+  "name": "pagerank",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yukimura45z/pagerank-js.git"
+  },
+  "author": "Yu Kimura",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jasmine": "^3.4.0",
+    "karma": "^4.3.0",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-jasmine": "^2.0.1",
+    "karma-typescript-preprocessor": "^0.4.0",
+    "typescript": "^3.6.3"
+  }
+}
