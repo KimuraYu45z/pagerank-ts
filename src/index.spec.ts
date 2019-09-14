@@ -41,7 +41,7 @@ describe("Pagerank", () => {
       5: 0.05
     };
 
-    const score = Pagerank.transitionScore(stochasticMatrix, currentScore);
+    const score = Pagerank.transitionScore(currentScore, stochasticMatrix);
     console.log(currentScore);
   });
 });

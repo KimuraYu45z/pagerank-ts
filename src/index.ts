@@ -11,7 +11,7 @@ export module Pagerank {
         sum += linkMatrix[src][dst];
       }
 
-      stochasticMatrix[src] = {};
+      stochasticMatrix[src] = new Vector;
       for (const dst in linkMatrix[src]) {
         stochasticMatrix[src][dst] = linkMatrix[src][dst] / sum;
       }
@@ -21,8 +21,8 @@ export module Pagerank {
   }
 
   export function transitionScore(
-    stochasticMatrix: Matrix,
-    currentScoreVector: Vector
+    currentScoreVector: Vector,
+    stochasticMatrix: Matrix
   ): Vector {
     const score = new Vector();
 

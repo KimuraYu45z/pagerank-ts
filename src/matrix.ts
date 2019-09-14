@@ -1,5 +1,5 @@
+import { Vector } from "./vector";
+
 export class Matrix {
-  [src: string]: {
-    [dst: string]: number;
-  }
+  [row: string]: Vector;
 }
