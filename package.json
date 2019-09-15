@@ -1,5 +1,5 @@
 {
-  "name": "pagerank",
+  "name": "pagerank-ts",
   "version": "1.0.0",
   "description": "",
   "main": "lib/index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yukimura45z/pagerank-js.git"
+    "url": "https://github.com/yukimura45z/pagerank-ts.git"
   },
   "author": "Yu Kimura",
   "license": "ISC",
